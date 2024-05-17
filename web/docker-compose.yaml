@@ -10,6 +10,7 @@ services:
     depends_on:
     - catalogue
     - user
+    container_name: web
   mongodb:
     image: mongodb:v1
     container_name: mongodb
