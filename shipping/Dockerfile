@@ -5,7 +5,7 @@ COPY src /opt/shipping/src
 RUN mvn dependency:resolve
 RUN mvn clean package
 # RUN
-FROM openjdk:8-jdk
+FROM openjdk:8 -jdk
 EXPOSE 8080
 WORKDIR /opt/shipping
 ENV CART_ENDPOINT=cart:8080
