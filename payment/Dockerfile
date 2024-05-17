@@ -7,5 +7,5 @@ ENV AMQP_PASS=roboshop123
 COPY *.py /opt/server
 COPY requirements.txt /opt/server
 COPY payment.ini /opt/server
-RUN pip install -r requirements.txt
+RUN pip3.9 install -r requirements.txt
 CMD ["uwsgi","--ini","payment.ini"]
