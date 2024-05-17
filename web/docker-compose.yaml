@@ -12,7 +12,6 @@ services:
     - user
     - cart
     - shipping
-    - payment
     container_name: web
   mongodb:
     image: mongodb:v1
