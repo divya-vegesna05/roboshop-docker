@@ -1,4 +1,4 @@
-FROM maven AS BUILD
+FROM maven AS build
 WORKDIR /opt/shipping
 COPY pom.xml /opt/shipping
 COPY src /opt/shipping/src
