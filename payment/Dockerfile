@@ -8,4 +8,4 @@ COPY *.py /opt/server
 COPY requirements.txt /opt/server
 COPY payment.ini /opt/server
 RUN pip3.9 install -r requirements.txt
-CMD ["uwsgi","-ini","payment.ini"]
+CMD ["uwsgi","--ini","payment.ini"]
