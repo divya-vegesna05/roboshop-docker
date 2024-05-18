@@ -1,4 +1,5 @@
-FROM node:18
+FROM node:18.20.2-alpine3.19
+#FROM node:18
 EXPOSE 8080
 WORKDIR /opt/server
 COPY package.json /opt/server
